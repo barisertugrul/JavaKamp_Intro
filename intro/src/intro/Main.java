@@ -57,7 +57,33 @@ public class Main {
 			System.out.println(krediler[i]);
 		}
 		
+		int sayi1 = 10;
+		int sayi2 = 20;
+		sayi1 = sayi2;
+		sayi2 = 100;
+		System.out.println(sayi1); //Konsol çýktýsý ne olur?
 		
+		//Sayýsal tipler, deðer tiplerdir
+		
+		
+		int[] sayilar1 = {1,2,3,4,5};
+		int[] sayilar2 = {10,20,30,40,50};
+		sayilar1 = sayilar2;
+		sayilar2[0] = 100;
+		System.out.println(sayilar1[0]); //Konsol çýktýsý ne olur?
+		
+		//Diziler referans tipler arasýnda yer alýr
+		
+		
+		String sehir1 = "Ankara";
+		String sehir2 = "Ýstanbul";
+		sehir1 = sehir2;
+		sehir2 = "Ýzmir";
+		System.out.println(sehir1); //Konsol çýktýsý ne olur?
+		
+		//String, bir dizi gibi iþlem gördüðü için
+		//referans tiptir ama istisna olarak deðer tipler gibi
+		//iþlem görür atamalarda
 	}
 
 }
